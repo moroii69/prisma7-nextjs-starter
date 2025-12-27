@@ -1,17 +1,21 @@
-## Node.js + Prisma 7 Starter
+## node.js + prisma 7 starter
 
-A minimal starter for building Node.js applications with TypeScript and Prisma 7.
+### setup
 
-### Setup
+1. `npm install`
+2. Create `.env`: `DATABASE_URL="postgresql://postgres:postgres@localhost:5432/prisma_db"`
+3. `docker-compose up -d` (starts pgSQL)
+4. `npm run prisma:generate && npm run db:push`
+5. `npm run dev`
 
-1. Install dependencies: `npm install`
-1.5. Set up environment: Copy `.env.example` to `.env` and configure `DATABASE_URL`
-2. Set up Prisma: `npm run prisma:generate` and `npm run db:push` (custom scripts for `npx prisma generate` and `npx prisma db push`)
-3. Run the app: `npm run dev` (development) or `npm run build && npm start` (production)
+### docker
 
-Note: The build script (`npm run build`) automatically generates the Prisma client before compiling TypeScript.
+The `docker-compose.yml` runs a pgSQL DB in a container. DB persists data between restarts and can be stopped with `docker-compose down`.
 
-## Links
+## scripts
 
-- https://www.prisma.io/docs/orm/more/upgrade-guides/upgrading-versions/upgrading-to-prisma-7
-- https://www.prisma.io/docs/orm/overview/databases/postgresql
+- `npm run dev` - dev
+- `npm run build` - build
+- `npm start` - prod
+- `npm run prisma:generate` - generate prisma client
+- `npm run db:push` - push schema to db
