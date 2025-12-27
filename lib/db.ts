@@ -1,3 +1,5 @@
+// refer this url for why we use the below syntax - https://www.prisma.io/docs/orm/more/help-and-troubleshooting/nextjs-help#avoid-multiple-prisma-client-instances
+
 import { PrismaClient } from "@/app/generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 
