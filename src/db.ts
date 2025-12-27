@@ -1,6 +1,6 @@
 // Refer to this URL for why we use the below syntax: https://www.prisma.io/docs/orm/more/help-and-troubleshooting/nextjs-help#recommended-solution
 
-import { PrismaClient } from "../src/generated/prisma/client";
+import { PrismaClient } from "./generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 
 const adapter = new PrismaPg({
