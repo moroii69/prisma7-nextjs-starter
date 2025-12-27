@@ -1,16 +1,16 @@
-## Next.js + Prisma 7 Starter Template
+## Node.js + Prisma 7 Starter
 
-A minimal starter template for building applications with Next.js and Prisma 7.
+A minimal starter for building Node.js applications with TypeScript and Prisma 7.
 
 ### Setup
 
-1. install dependencies: `npm install`
-2. set up prisma: `npm run prisma:generate` and `npm run db:push` (custom scripts for `npx prisma generate` and `npx prisma db push`)
-3. run the app: `npm run dev`
+1. Install dependencies: `npm install`
+2. Set up Prisma: `npm run prisma:generate` and `npm run db:push` (custom scripts for `npx prisma generate` and `npx prisma db push`)
+3. Run the app: `npm run dev` (development) or `npm run build && npm start` (production)
 
-note: the [build script](https://github.com/moroii69/prisma7-nextjs-starter/blob/main/package.json#:~:text=%22build%22%3A%20%22prisma%20generate%20%26%26%20next%20build%22%2C) (`npm run build`) automatically generates the prisma client before building.
+Note: The build script (`npm run build`) automatically generates the Prisma client before compiling TypeScript.
 
 ## Links
 
 - https://www.prisma.io/docs/orm/more/upgrade-guides/upgrading-versions/upgrading-to-prisma-7
-- https://www.prisma.io/docs/orm/more/help-and-troubleshooting/nextjs-help#best-practices-for-using-prisma-client-in-development
+- https://www.prisma.io/docs/orm/overview/databases/postgresql
