@@ -5,6 +5,7 @@ A minimal starter for building Node.js applications with TypeScript and Prisma 7
 ### Setup
 
 1. Install dependencies: `npm install`
+1.5. Set up environment: Copy `.env.example` to `.env` and configure `DATABASE_URL`
 2. Set up Prisma: `npm run prisma:generate` and `npm run db:push` (custom scripts for `npx prisma generate` and `npx prisma db push`)
 3. Run the app: `npm run dev` (development) or `npm run build && npm start` (production)
 
